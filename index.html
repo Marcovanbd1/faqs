@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Support Playlists – FAQ for our conversation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-soft: #0b1220;
+      --card: #0f172a;
+      --accent: #4fd1c5;
+      --accent-soft: rgba(79, 209, 197, 0.16);
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #1e293b;
+      --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      background: radial-gradient(circle at top, #111827 0, #020617 60%);
+      color: var(--text);
+      font-family: var(--font);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      padding: 0;
+    }
+
+    .shell {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 24px 20px 56px;
+    }
+
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+    }
+
+    .brand-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .brand-badge {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #4fd1c5, #0f172a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 0 14px rgba(79, 209, 197, 0.7);
+    }
+
+    .tagline {
+      font-size: 12px;
+      color: var(--muted);
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: radial-gradient(circle at top left, rgba(79, 209, 197, 0.12), rgba(15,23,42,0.9));
+      display: none;
+    }
+
+    @media (min-width: 720px) {
+      .tagline {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+
+    .tag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 6px rgba(79, 209, 197, 1);
+    }
+
+    header h1 {
+      font-size: clamp(24px, 3vw, 30px);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    section {
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .faq-card {
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: radial-gradient(circle at top left, var(--accent-soft), rgba(15, 23, 42, 0.96));
+      padding: 12px 14px 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 16px 38px rgba(0,0,0,0.65);
+    }
+
+    .faq-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .faq-q {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .faq-a {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .faq-a strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 26px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(148, 163, 184, 0.3);
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="brand-row">
+        <div class="brand">
+          <div class="brand-badge">SP</div>
+          <div>Support Playlists</div>
+        </div>
+        <div class="tagline">
+          <div class="tag-dot"></div>
+          <span>FAQ for our conversation</span>
+        </div>
+      </div>
+      <h1>Support Playlists – a short FAQ</h1>
+      <p>
+        I thought I would start our meeting with something simple. These are the questions I imagine you might have in your heads, and the most honest answers I can give.
+      </p>
+    </header>
+
+    <section>
+      <div class="faq-card">
+        <div class="faq-label">FAQ 1</div>
+        <div class="faq-q">Are you here to pitch a product?</div>
+        <div class="faq-a">
+          <strong>No.</strong> I do not have a product to pitch. I am not building anything and I am not trying to sell you anything. I am only here to talk about the human moment at the start of care.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 2</div>
+        <div class="faq-q">Are you expecting to join Rapid Health or take on a role?</div>
+        <div class="faq-a">
+          <strong>No.</strong> I am not aiming for a job and I am not trying to become part of your structure. This is your world, not mine.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 3</div>
+        <div class="faq-q">Are you here to run a pilot or deliver anything operational?</div>
+        <div class="faq-a">
+          <strong>Definitely not.</strong> I am not the right person to run delivery, operations or implementation. All of that sits with you.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 4</div>
+        <div class="faq-q">So what are you here for?</div>
+        <div class="faq-a">
+          I am here because I keep seeing a gap between how people actually speak and how the system responds. People do not arrive with categories or symptoms. They arrive with stories. That gap keeps showing up, and Support Playlists comes directly out of it.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 5</div>
+        <div class="faq-q">What exactly is Support Playlists in one sentence?</div>
+        <div class="faq-a">
+          <strong>Support Playlists turns what someone says in their own words into a short, curated sequence of next steps that actually fit their situation.</strong>
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 6</div>
+        <div class="faq-q">Is this a module for Smart Triage?</div>
+        <div class="faq-a">
+          <strong>It could be, but I do not know.</strong> That is entirely your domain. I am not imagining a specific feature. I am imagining the understanding layer, the human doorway, that sits upstream of whatever you choose to build.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 7</div>
+        <div class="faq-q">Are you trying to define your space inside Rapid Health?</div>
+        <div class="faq-a">
+          <strong>No.</strong> I am trying to define my lane, not my place. My lane is emotional architecture, the human moment, the psychology of “I do not know where to start”. Everything beyond that is yours.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 8</div>
+        <div class="faq-q">What do you want from this meeting?</div>
+        <div class="faq-a">
+          Three simple things:<br />
+          1. Does the human moment I am describing feel true in your world.<br />
+          2. Does this understanding layer feel useful alongside what you are already building.<br />
+          3. If so, how might it fit in a way that keeps you fully in control.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 9</div>
+        <div class="faq-q">What if none of this fits?</div>
+        <div class="faq-a">
+          Then that is completely fine. I am not attached to an outcome. I just want to offer a perspective that might be helpful.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-label">FAQ 10</div>
+        <div class="faq-q">Why do this at all?</div>
+        <div class="faq-a">
+          Because I think the system, and Rapid Health in particular, is missing one layer – the layer that listens to people as they actually are, before the system begins. If that layer is useful to you, I am happy to help clarify it. If not, that is okay too.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      This page is just a thinking aid for our conversation. It is not a proposal or a product document.<br />
+      Mark
+    </footer>
+  </div>
+</body>
+</html>
